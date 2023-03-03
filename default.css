@@ -1,47 +1,48 @@
 :root{
     --mainColor:#eaeaea;
-	--secondaryColor:#fff;
+    --secondaryColor:#fff;
 
-	--borderColor:#c1c1c1;
+    --borderColor:#c1c1c1;
 
-	--mainText:black;
-	--secondaryText:#4b5156;
+    --mainText:black;
+    --secondaryText:#4b5156;
 
-	--themeDotBorder:#24292e;
+    --themeDotBorder:#24292e;
 
-	--previewBg:rgb(251, 249, 243, 0.8);
-	--previewShadow:#f0ead6;
+    --previewBg:rgb(251, 249, 243, 0.8);
+    --previewShadow:#f0ead6;
 
 
-	--buttonColor:black;
+    --buttonColor:black;
+
 }
-
 .typewriter h1 {
-     color: var(--mainText);
-     font-family: 'Russo One', sans-serif;
-     font-weight: 500;
-     text-align: center;
-     overflow: hidden; /* Ensures the content is not revealed until the animation */
-     border-right: .15em solid white; /* The typwriter cursor */
-     white-space: nowrap; /* Keeps the content on a single line */
-     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-     letter-spacing: .15em; /* Adjust as needed */
-     animation: 
-       typing 3.5s steps(40, end),
-       blink-caret .75s step-end infinite;
-   }
+    color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
 
-   /* The typing effect */
-   @keyframes typing {
-     from { width: 0 }
-     to { width: 100% }
-   }
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
-   /* The typewriter cursor effect */
-   @keyframes blink-caret {
-     from, to { border-color: transparent }
-     50% { border-color: white; }
-	   
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
 html, body{
     padding: 0;
     margin: 0;
@@ -366,12 +367,12 @@ h6 { font-size: 16px;}
     margin: 5px 2px;
     border-radius: 50%;
   }
-  
+
 
   .fa:hover {
     opacity: 0.7;
   }
-  
+
   .fa-facebook {
     background: #3B5998;
     color: white;
@@ -383,14 +384,16 @@ h6 { font-size: 16px;}
   }
 
   .fa-instagram {
-    background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    font-size:48px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
   }
-  
+
 @media screen and (max-width: 1200px) {
     .main-container{
         width: 95%;
     }
-    
+
 }
 
 @media screen and (max-width: 800px) {
@@ -408,6 +411,4 @@ h6 { font-size: 16px;}
         justify-content: center;
     }
 
-    
-    
 }
